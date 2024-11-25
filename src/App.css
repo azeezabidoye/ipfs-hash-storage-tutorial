@@ -29,7 +29,7 @@
   margin-bottom: 15px;
 }
 
-.submit-button {
+.upload-button {
   background-color: #4caf50;
   color: white;
   padding: 10px 20px;
@@ -40,7 +40,7 @@
   transition: background-color 0.3s ease;
 }
 
-.submit-button:hover {
+.upload-button:hover {
   background-color: #45a049;
 }
 
