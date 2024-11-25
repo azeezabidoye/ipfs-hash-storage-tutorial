@@ -1,0 +1,36 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "contracts/IpfsHashStorage.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.25;\n\ncontract IpfsHashStorage {\n    string private ipfsHash;\n\n    // Hash Setter Function\n    function setIPFSHash (string memory _ipfsHash) public view {\n        _ipfsHash = ipfsHash;\n    }\n\n    // Hash Getter Function\n    function getIPFSHash() public view returns(string memory) {\n        return ipfsHash;\n    }\n}"
+    }
+  },
+  "settings": {
+    "evmVersion": "paris",
+    "optimizer": {
+      "enabled": false,
+      "runs": 200
+    },
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers",
+          "metadata",
+          "devdoc",
+          "userdoc",
+          "storageLayout",
+          "evm.gasEstimates"
+        ],
+        "": [
+          "ast"
+        ]
+      }
+    },
+    "metadata": {
+      "useLiteralContent": true
+    }
+  }
+}
